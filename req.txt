@@ -1,0 +1,7 @@
+vaderSentiment
+pandas
+scikit-learn
+numpy
+joblib
+matplotib
+seaborn

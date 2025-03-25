@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analysis Results</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f0f0f0; }
+        .result-container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #333; }
+        h2 { color: #4CAF50; margin-top: 20px; }
+        p { margin: 10px 0; color: #555; white-space: pre-wrap; }
+        pre { background: #f9f9f9; padding: 15px; border-radius: 5px; overflow-x: auto; }
+        a { display: block; text-align: center; margin-top: 20px; color: #4CAF50; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h1>Analysis Results</h1>
+        
+        <h2>Sentiment Score</h2>
+        <p>{{ results.sentiment_result }}</p>
+
+        <h2>Report</h2>
+        <p>User Data: {{ results.report_user_data }}</p>
+        <pre>Cognitive Flag: {{ results.report_cognitive }}</pre>
+
+        <h2>Recommendation</h2>
+        <p>{{ results.recommendation }}</p>
+
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>

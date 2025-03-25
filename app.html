@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stress & Sentiment Analyzer</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f0f0f0; }
+        .form-container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #333; }
+        label { display: block; margin: 10px 0 5px; color: #555; }
+        input, select, button { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        button { background-color: #4CAF50; color: white; border: none; cursor: pointer; font-size: 16px; }
+        button:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Stress & Sentiment Analyzer</h1>
+        <form action="/analyze" method="POST">
+            <label for="tweet">Tweet:</label>
+            <input type="text" id="tweet" name="tweet" required>
+
+            <label for="t2">Additional Text:</label>
+            <input type="text" id="t2" name="t2" required>
+
+            <label for="user_session_time">User Session Time (min):</label>
+            <input type="number" id="user_session_time" name="user_session_time" required>
+
+            <label for="avg_session_time">Average Session Time (min):</label>
+            <input type="number" id="avg_session_time" name="avg_session_time" required>
+
+            <label for="recommendation">Recommendation:</label>
+            <select id="recommendation" name="recommendation" required>
+                <option value="Connect with a friend">Connect with a friend</option>
+                <option value="Listen to calming music">Listen to calming music</option>
+                <option value="Engage in physical exercise">Engage in physical exercise</option>
+                <option value="Try mindfulness activity">Try mindfulness activity</option>
+                <option value="Limit screen time">Limit screen time</option>
+                <option value="Take a short break">Take a short break</option>
+            </select>
+
+            <button type="submit">Analyze</button>
+        </form>
+    </div>
+</body>
+</html>

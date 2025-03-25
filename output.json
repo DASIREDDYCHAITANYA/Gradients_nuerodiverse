@@ -1,0 +1,11 @@
+{
+    "user_id": "user_123",
+    "stress_level": "low",
+    "frequent_content_type": "educational",
+    "sentiment_score": "neutral",
+    "average_session_time_min": 45,
+    "cognitive_flag": {
+        "code": "2",
+        "label": "Distracted & Emotionally Fluctuating"
+    }
+}
